@@ -19,7 +19,7 @@ if ($connect) {
    }
    mysqli_close($connect);
 } else {
-   die('нет связи с базой данных gb');
+   die("Соединение с Базой данных не установлено!");
 }
 echo '</div>';
 
