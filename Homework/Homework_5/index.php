@@ -5,7 +5,8 @@ require_once 'connect_db.php';
 echo "<link rel='stylesheet' href= style.css>";
 
 if ($connect) {
-   $res = mysqli_query($connect, "SELECT * FROM images ORDER BY vote_count DESC");
+   $querySelectImages = "SELECT * FROM images ORDER BY vote_count DESC";
+   $res = mysqli_query($connect, $querySelectImages);
    $result = [];
    while ($row = mysqli_fetch_assoc($res)) {
       $result[] = $row;
