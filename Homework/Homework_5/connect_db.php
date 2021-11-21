@@ -1,7 +1,7 @@
 <?php
   $servername = "localhost";
   $username = "root";
-  $password = "Qas6932#";
+  $password = "******";
   $dbname= "php_gb";
 
   // Создаем соединение
