@@ -15,6 +15,10 @@ if ($connect){
         $query_reg = "INSERT INTO `users` SET name = '".$_POST['user_name']."', login = '".$_POST['user_login']."', password = '".$password."', email = '".$_POST['email']."'";
         // $query_reg = mysqli_escape_string($connect, $query_reg);
         mysqli_query($connect,$query_reg);
-        echo 'Registration success';
+        
+        header('location:login.php');
+        die();
+    } else {
+        echo 'Invalid data for registration!';
     }
 }
